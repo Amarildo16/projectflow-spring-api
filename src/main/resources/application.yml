@@ -1,0 +1,23 @@
+﻿spring:
+  application:
+    name: projectflow-spring-api
+
+  datasource:
+    url: jdbc:postgresql://localhost:5433/projectflow_db
+    username: projectflow_user
+    password: projectflow_pass
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
+    show-sql: false
+
+server:
+  port: 8080
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
