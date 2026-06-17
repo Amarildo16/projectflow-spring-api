@@ -61,6 +61,8 @@ public class ProjectService {
             project.setStatus(request.status());
         }
 
+        project.markUpdated();
+
         return ProjectResponse.fromEntity(project);
     }
 

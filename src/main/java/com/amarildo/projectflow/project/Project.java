@@ -76,6 +76,10 @@ public class Project {
         this.status = status;
     }
 
+    public void markUpdated() {
+        this.updatedAt = LocalDateTime.now();
+    }
+
     public LocalDateTime getCreatedAt() {
         return createdAt;
     }
